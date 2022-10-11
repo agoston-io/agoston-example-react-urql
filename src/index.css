@@ -1,13 +1,82 @@
 body {
+  background-color: black;
+  color: rgb(153, 255, 0);
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Consolas';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* unvisited link */
+a:link {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: rgb(255, 255, 255);
+}
+
+/* mouse over link */
+a:hover {
+  color: #f0f;
+}
+
+/* selected link */
+a:active {
+  color: rgb(255, 255, 255);
+}
+
+.banner {
+ margin: 0;
+}
+
+.user-id {
+  color: #f0f;
+}
+
+.chatbox .messages .message-line .message {
+  color: rgb(255, 255, 255);
+}
+
+.chatbox .messages .message-line {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.input {
+  float:left;
+}
+
+.loader {
+  border: 3px solid #f3f3f3; /* Light grey */
+  border-top: 3px solid #f0f;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  animation: spin 1s linear infinite;
+  float:left;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+.loading-message {
+  margin-top: 2px;
+  margin-left: 5px;
+  float:left;
+  color: #f0f;
+}
+
+.reset {
+  clear:left;
+}
+
+.d-none {
+  display: none;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
