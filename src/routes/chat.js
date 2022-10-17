@@ -119,7 +119,7 @@ function ChatBoxMessages() {
     <div className="messages">
       {messages.map(message => (
         <div key={message.id}>
-          <p className="message-line"> ⏱ {message.createdTs} <span className='user-id'>👤 {message.userId===0?'anonymous':`User ${message.userId}`}</span> <span className="message">🗣 {message.message}</span></p>
+          <p className="message-line"> ⏱ {message.createdTs.substring(0,19).replace("T", " ")} <span className='user-id'>👤 {message.userId===0?'anonymous':`User ${message.userId}`}</span> <span className="message">🗣 {message.message}</span></p>
         </div>
       ))}
     </div>
