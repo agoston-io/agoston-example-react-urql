@@ -40,9 +40,9 @@ function RootWithSessionData() {
             <p className='banner'>🔥 Free backend from <a href={AGOSTON_URL} target='_blank' rel="noreferrer">agoston.io</a>.</p>
             <p className='banner'>🔥 Project hosted on GitHub <a href={AGOSTON_CHAT_GITHUB_URL} target='_blank' rel="noreferrer">on GitHub</a>.</p>
             <p className='banner'>🔥 Try the Graphql requests <a href={AGOSTON_GRAPHIQL_URL} target='_blank' rel="noreferrer">here</a>.</p>
-            <p className={sessionData.isSessionAuthenticated?'banner d-none':'banner'}>🔥 Authenticate yourself <a href={AGOSTON_AUTH_GOOGLE} rel="noreferrer">here</a>.</p>
+            <p className={sessionData.isSessionAuthenticated?'banner d-none':'banner'}>🔥 Authenticate yourself <a href={AGOSTON_AUTH_GOOGLE}>here</a>.</p>
             <p className={sessionData.isSessionAuthenticated?'banner':'banner d-none'}>
-                🔥 Authenticated as <span className="user-id">user {sessionData.getCurrentUserId}</span> Logout <a href={AGOSTON_AUTH_LOGOUT} rel="noreferrer">here</a>.
+                🔥 Authenticated as <span className="user-id">user {sessionData.getCurrentUserId}</span> Logout <a href={AGOSTON_AUTH_LOGOUT}>here</a>.
             </p>
             <p className='banner'>------------------------------------------------------------------------------------------</p>
             <Chat />
